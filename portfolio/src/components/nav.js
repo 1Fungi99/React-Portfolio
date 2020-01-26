@@ -3,8 +3,10 @@ import React from "react";
 function Nav() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar ">
+        <a className="navbar-brand name" href="#">
+          {" "}
+          {/* //Send back to home */}
           Justin Cheng
         </a>
         <button
@@ -23,15 +25,33 @@ function Nav() {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
               <a className="nav-link" href="#">
+                {" "}
+                {/* //Send back to home */}
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
+                {" "}
+                {/* //Send to './about-me' */}
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                {" "}
+                {/* //Send to './portfolio' */}
                 Portfolio
               </a>
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                {" "}
+                {/* //Send to './contact-me' */}
+                Contact Info
+              </a>
+            </li>
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -55,7 +75,7 @@ function Nav() {
                   Something else here
                 </a>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

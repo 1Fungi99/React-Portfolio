@@ -12,8 +12,16 @@ code {
     monospace;
 }
 
+li {
+  color: whitesmoke;
+  margin-right: 10px;
+}
+
 .card {
-  margin-top: 10px;
+  margin-top: 50px;
+}
+.card-deck {
+  margin: auto;
 }
 
 svg {
@@ -31,11 +39,12 @@ svg {
 
 .jumbotron {
   background: none;
-  margin-top: 35%;
+  margin-top: 30%;
 }
 
 .name {
   font-family: "Times New Roman";
+  color: whitesmoke;
 }
 
 .navbar {
@@ -68,6 +77,18 @@ svg {
 .home-btn {
   margin-left: 2px;
   margin-right: 2px;
+  background-color: transparent;
+  border-color: grey;
+  border-width: 2px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
 }
 @media only screen and (max-width: 375px) {
   h1 {
@@ -91,6 +112,7 @@ svg {
     font-size: medium;
   }
 }
+
 /* ===================================ANIMATED BACKGROUND CSS=================================== */
 
 /* ===================================ANIMATED BACKGROUND CSS=================================== */

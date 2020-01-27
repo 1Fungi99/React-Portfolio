@@ -1,11 +1,11 @@
 import React from "react";
+import { BrowserRouter as Link } from "react-router-dom";
 
 function Nav() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar ">
-        <a className="navbar-brand name" href="#">
-          {" "}
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <a className="navbar-brand name" href="/">
           {/* //Send back to home */}
           Justin Cheng
         </a>
@@ -20,62 +20,32 @@ function Nav() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                {" "}
+            <li className="nav-item ">
+              <Link className="nav-link" to="/">
                 {/* //Send back to home */}
-                Home <span className="sr-only">(current)</span>
-              </a>
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                {" "}
+              <Link className="nav-link" to="/about-me">
                 {/* //Send to './about-me' */}
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                {" "}
+              <Link className="nav-link" to="/portfolio">
                 {/* //Send to './portfolio' */}
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                {" "}
+              <Link className="nav-link" to="contact">
                 {/* //Send to './contact-me' */}
                 Contact Info
-              </a>
+              </Link>
             </li>
-            {/* <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
-                  Contact
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
-            </li> */}
           </ul>
         </div>
       </nav>

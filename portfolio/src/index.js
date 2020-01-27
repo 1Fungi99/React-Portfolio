@@ -8,7 +8,9 @@ import Nav from "./components/nav";
 import Home from "./components/home";
 import HomeFooter from "./components/footer";
 
-import CardContent from "./components/card";
+// Card Components for portfolio
+import CardContent from "./components/cards/card-template";
+import ShelveIt from "./components/cards/shelve-it";
 import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
@@ -62,16 +64,10 @@ ReactDOM.render(
           <div className="">
             <div className="card-deck container text-center">
               <div className="card">
-                <CardContent />,
+                <ShelveIt />
               </div>
               <div className="card">
-                <CardContent />,
-              </div>
-              <div className="card">
-                <CardContent />,
-              </div>
-              <div className="card">
-                <CardContent />,
+                <CardContent />
               </div>
             </div>
           </div>

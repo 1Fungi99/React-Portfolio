@@ -11,49 +11,15 @@ import HomeFooter from "./components/footer";
 // Card Components for portfolio
 import CardContent from "./components/cards/card-template";
 import ShelveIt from "./components/cards/shelve-it";
+import DestinationStation from "./components/cards/destination-station";
+import Liri from "./components/cards/liri";
+import Bootstrap from "./components/cards/portfolio-old";
+
 import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
 
-// Portfolio Layout
-// =============================================================
-// ReactDOM.render(
-//   <div>
-//     <Nav />,
-{
-  /* <div className="card-deck container-fluid text-center">
-  <div className="card">
-    <CardContent />,
-  </div>
-  <div className="card">
-    <CardContent />,
-  </div>
-  <div className="card">
-    <CardContent />,
-  </div>
-  <div className="card">
-    <CardContent />,
-  </div>
-</div> */
-}
-//   </div>,
-//   document.getElementById("root")
-// );
-// =============================================================
-
-// Home Layout
-// =============================================================
-// ReactDOM.render(
-//   <div>
-//     <Nav />,
-//     <Home />,
-//     <HomeFooter />
-//   </div>,
-//   document.getElementById("root")
-// );
-// =============================================================
-
-// Switch Test for router
+// Router
 // =============================================================
 ReactDOM.render(
   <Router>
@@ -61,16 +27,33 @@ ReactDOM.render(
     <div>
       <Switch>
         <Route path="/portfolio">
-          <div className="">
-            <div className="card-deck container text-center">
-              <div className="card">
-                <ShelveIt />
+          <div id="portfolio-buffer">
+            <div
+              className="card-deck container text-center"
+              id="portfolio-container"
+            >
+              <div classname="row">
+                <div className="card">
+                  <ShelveIt />
+                </div>
+                <div className="card">
+                  <DestinationStation />
+                </div>
               </div>
-              <div className="card">
-                <CardContent />
+              <div classname="row">
+                <div className="card">
+                  <Liri />
+                </div>
+                <div className="card">
+                  <Bootstrap />
+                </div>
               </div>
             </div>
           </div>
+        </Route>
+        <Route path="/about-me">
+          <Home />,
+          <HomeFooter />
         </Route>
 
         {/* Default Route */}

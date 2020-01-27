@@ -14,6 +14,10 @@ code {
 
 .card {
   margin-top: 50px;
+  background-color: transparent;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 20px 10px 0 rgba(0, 0, 0, 0.5);
+  color: rgba(245, 245, 245, 0.753);
+  font-weight: 500;
 }
 .card-deck {
   margin: auto;
@@ -56,6 +60,13 @@ svg {
   height: 5px;
   width: 30%;
   border-top: 2px solid white;
+}
+
+#portfolio-container {
+  width: 50%;
+}
+#portfolio-buffer {
+  margin-bottom: 2%;
 }
 
 @media only screen and (max-width: 425px) {

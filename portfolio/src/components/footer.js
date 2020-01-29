@@ -3,7 +3,7 @@ import GitHubButton from "react-github-btn";
 
 function HomeFooter() {
   return (
-    <div class="footer">
+    <div className="footer">
       <GitHubButton
         href="https://github.com/1Fungi99"
         data-color-scheme="no-preference: dark; light: dark; dark: dark;"
@@ -12,9 +12,9 @@ function HomeFooter() {
       >
         Follow
       </GitHubButton>
-      <a
+      {/* <a
         href="https://twitter.com/JustinReedCheng?ref_src=twsrc%5Etfw"
-        class="twitter-follow-button"
+        className="twitter-follow-button"
         data-size="large"
         data-show-screen-name="false"
         data-show-count="false"
@@ -25,7 +25,14 @@ function HomeFooter() {
         async
         src="https://platform.twitter.com/widgets.js"
         charset="utf-8"
-      ></script>
+      ></script> */}
+      <a
+        className="twitter-follow-button"
+        href="https://twitter.com/JustinReedCheng"
+        data-size="large"
+        data-show-count="false"
+        data-show-screen-name="false"
+      ></a>
     </div>
   );
 }

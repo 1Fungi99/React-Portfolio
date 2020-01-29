@@ -7,6 +7,7 @@ import "./index.css";
 import Nav from "./components/nav";
 import Home from "./components/home";
 import HomeFooter from "./components/footer";
+import Contact from "./components/contact";
 
 // Card Components for portfolio
 import CardContent from "./components/cards/card-template";
@@ -18,6 +19,7 @@ import Bootstrap from "./components/cards/portfolio-old";
 import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
+import About from "./components/about";
 
 // Router
 // =============================================================
@@ -28,11 +30,8 @@ ReactDOM.render(
       <Switch>
         <Route path="/portfolio">
           <div id="portfolio-buffer">
-            <div
-              className="card-deck container text-center"
-              id="portfolio-container"
-            >
-              <div classname="row">
+            <div className="container" id="portfolio-container">
+              <div classname="col-lg-2">
                 <div className="card">
                   <ShelveIt />
                 </div>
@@ -40,7 +39,7 @@ ReactDOM.render(
                   <DestinationStation />
                 </div>
               </div>
-              <div classname="row">
+              <div classname="col-lg-2">
                 <div className="card">
                   <Liri />
                 </div>
@@ -50,12 +49,18 @@ ReactDOM.render(
               </div>
             </div>
           </div>
-        </Route>
-        <Route path="/about-me">
-          <Home />,
           <HomeFooter />
         </Route>
-
+        <Route path="/about-me">
+          <div className="container about-me">
+            <About />,
+          </div>
+          <HomeFooter />
+        </Route>
+        <Route path="/contact">
+          <Contact />,
+          <HomeFooter />
+        </Route>
         {/* Default Route */}
         <Route exect={true} path="/">
           <Home />,

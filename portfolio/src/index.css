@@ -6,15 +6,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+.white-text {
+  color: rgba(245, 245, 245, 0.753);
+}
+.btn {
+  margin-left: 1.5%;
+}
+.flip-front {
+  width: 300px;
+  height: 300px;
+}
 .card {
   margin-top: 50px;
-  background-color: transparent;
+  background-color: rgba(82, 78, 78, 0.479);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 20px 10px 0 rgba(0, 0, 0, 0.5);
   color: rgba(245, 245, 245, 0.753);
   font-weight: 500;
@@ -25,6 +38,7 @@ code {
 
 svg {
   margin-top: 15px;
+  background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia02.hongkiat.com%2Ffacebook-likes-with-node-js%2Fnode-js.jpg&f=1&nofb=1");
 }
 
 .container-fluid {
@@ -40,6 +54,11 @@ svg {
   background: none;
   margin-top: 30%;
 }
+#contact-me {
+  margin-top: 15%;
+  background-color: rgba(70, 70, 70, 0.315);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 10px 10px 0 rgba(0, 0, 0, 0.12);
+}
 
 .name {
   font-family: "Times New Roman";
@@ -49,10 +68,14 @@ svg {
 .navbar {
   background: transparent;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 10px 10px 0 rgba(0, 0, 0, 0.12);
+  opacity: 1;
 }
 
 .container {
   width: 80%;
+}
+.about-me {
+  margin-top: 3%;
 }
 .h-divider {
   margin-top: 5px;
@@ -67,18 +90,6 @@ svg {
 }
 #portfolio-buffer {
   margin-bottom: 2%;
-}
-
-@media only screen and (max-width: 425px) {
-  h1 {
-    font-size: x-large;
-  }
-  .motto {
-    font-size: x-large;
-  }
-  .navbar-brand {
-    font-size: large;
-  }
 }
 .home-btn {
   margin-left: 2px;
@@ -96,9 +107,86 @@ svg {
   color: white;
   text-align: center;
 }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+img {
+  height: 198px;
+  width: 298px;
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: x-large;
+  }
+  h2 {
+    font-size: x-large;
+  }
+  h4 {
+    font-size: medium;
+  }
+  .btn {
+    font-size: small;
+  }
+  .motto {
+    font-size: x-large;
+  }
+  .navbar-brand {
+    font-size: large;
+  }
+}
 @media only screen and (max-width: 375px) {
   h1 {
     font-size: larger;
+  }
+  h2 {
+    font-size: larger;
+  }
+  h4 {
+    font-size: small;
   }
   .motto {
     font-size: larger;

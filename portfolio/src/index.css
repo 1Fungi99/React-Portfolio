@@ -13,7 +13,7 @@ code {
 }
 
 .card {
-  margin-top: 50px;
+  margin-top: 5%;
   background-color: transparent;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 20px 10px 0 rgba(0, 0, 0, 0.5);
   color: rgba(245, 245, 245, 0.753);
@@ -39,6 +39,11 @@ svg {
 .jumbotron {
   background: none;
   margin-top: 30%;
+}
+.jumbotron-fluid {
+  margin-top: 5%;
+
+  color: rgba(245, 245, 245, 0.753);
 }
 
 .name {

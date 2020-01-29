@@ -18,6 +18,7 @@ import Bootstrap from "./components/cards/portfolio-old";
 import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
+import AboutMe from "./components/aboutMe";
 
 // Router
 // =============================================================
@@ -52,8 +53,7 @@ ReactDOM.render(
           </div>
         </Route>
         <Route path="/about-me">
-          <Home />,
-          <HomeFooter />
+          <AboutMe />
         </Route>
 
         {/* Default Route */}

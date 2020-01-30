@@ -1,21 +1,19 @@
 import React from "react";
-import skill from "./props/skills";
 
-function About() {
+const About = props => {
   return (
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src={} alt="Avatar"></img>
+          <img alt="Avatar" src={props.src}></img>
         </div>
         <div class="flip-card-back">
-          <h1>John Doe</h1>
-          <p>Architect & Engineer</p>
-          <p>We love that guy</p>
+          <h2>{props.name}</h2>
+          <p>{props.text}</p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default About;

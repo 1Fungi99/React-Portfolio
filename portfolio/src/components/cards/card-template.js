@@ -1,6 +1,6 @@
 import React from "react";
 
-function CardContent() {
+const CardContent = () => {
   return (
     <div class="text-center">
       <div>
@@ -35,6 +35,6 @@ function CardContent() {
       </p>
     </div>
   );
-}
+};
 
 export default CardContent;

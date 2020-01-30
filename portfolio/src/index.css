@@ -14,7 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+.col-lg-3 {
+  max-width: 300px;
+}
 .white-text {
   color: rgba(245, 245, 245, 0.753);
 }
@@ -54,17 +56,10 @@ svg {
   background: none;
   margin-top: 30%;
 }
-<<<<<<< HEAD
-.jumbotron-fluid {
-  margin-top: 5%;
-
-  color: rgba(245, 245, 245, 0.753);
-=======
 #contact-me {
   margin-top: 15%;
   background-color: rgba(70, 70, 70, 0.315);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 10px 10px 0 rgba(0, 0, 0, 0.12);
->>>>>>> 2e8fb43e383d468cbf30bca3a8ee32ea48944faa
 }
 
 .name {
@@ -156,7 +151,7 @@ svg {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(40, 46, 51);
   color: white;
   transform: rotateY(180deg);
 }

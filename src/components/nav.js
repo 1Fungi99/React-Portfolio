@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -43,6 +43,9 @@ function Nav() {
           </ul>
         </div>
       </nav>
+      {/* Just getting rid of compile warnings */}
+      {/* No functionality */}
+      <Router></Router>
     </div>
   );
 }

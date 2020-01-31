@@ -1,5 +1,4 @@
 import React from "react";
-import GitHubButton from "react-github-btn";
 
 function Contact() {
   return (
@@ -12,6 +11,7 @@ function Contact() {
           <h4>Phone: (213) 864-5887</h4>
           <div className="row contact">
             <a
+              target="_blank"
               className="btn btn-secondary"
               href="https://www.linkedin.com/in/justin-reed-cheng-37b425194/"
               role="button"
@@ -19,11 +19,28 @@ function Contact() {
               Linkedin
             </a>
             <a
+              target="_blank"
               className="btn btn-secondary"
               href="https://www.facebook.com/justinpc2"
               role="button"
             >
               Facebook
+            </a>
+            <a
+              target="_blank"
+              className="btn btn-secondary"
+              href="https://twitter.com/JustinReedCheng"
+              role="button"
+            >
+              Twitter
+            </a>
+            <a
+              target="_blank"
+              className="btn btn-secondary"
+              href="https://github.com/1Fungi99"
+              role="button"
+            >
+              Github
             </a>
           </div>
         </div>

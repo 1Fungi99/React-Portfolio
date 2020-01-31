@@ -3,7 +3,7 @@ import React from "react";
 import CardContent from "../card-template";
 import PortfolioElements from "../props/portfolio";
 
-const PortfolioContent = function() {
+const PortfolioSkillContent = function() {
   return (
     <div id="portfolio-buffer">
       <div className="container" id="portfolio-container">
@@ -59,4 +59,4 @@ const PortfolioContent = function() {
     </div>
   );
 };
-export default PortfolioContent;
+export default PortfolioSkillContent;

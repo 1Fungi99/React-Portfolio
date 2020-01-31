@@ -1,6 +1,6 @@
 import React from "react";
 
-function Bootstrap() {
+const CardContent = props => {
   return (
     <div class="text-center">
       <div>
@@ -21,23 +21,15 @@ function Bootstrap() {
           </text>
         </svg>
       </div>
-      <h2>Bootstrap Portfolio</h2>
+      <h2>{props.name}</h2>
+      <p>{props.text}</p>
       <p>
-        THis is my old portfolio, made using Bootstrap, jQuery, Javascript and
-        CSS. This old portfolio was the base of the current portfolio you are
-        looking at!
-      </p>
-      <p>
-        <a
-          class="btn btn-secondary"
-          href="https://github.com/1Fungi99/Bootstrap-Portfolio"
-          role="button"
-        >
+        <a class="btn btn-secondary" href={props.href} role="button">
           View details
         </a>
       </p>
     </div>
   );
-}
+};
 
-export default Bootstrap;
+export default CardContent;

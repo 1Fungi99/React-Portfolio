@@ -12,36 +12,29 @@ function Contact() {
           <div className="row contact">
             <a
               target="_blank"
-              className="btn btn-secondary"
+              rel="noopener noreferrer"
+              className="fa fa-linkedin"
               href="https://www.linkedin.com/in/justin-reed-cheng-37b425194/"
-              role="button"
-            >
-              Linkedin
-            </a>
+            ></a>
             <a
               target="_blank"
-              className="btn btn-secondary"
+              rel="noopener noreferrer"
+              className="fa fa-facebook"
               href="https://www.facebook.com/justinpc2"
-              role="button"
-            >
-              Facebook
-            </a>
+            ></a>
             <a
               target="_blank"
-              className="btn btn-secondary"
+              rel="noopener noreferrer"
+              className="fa fa-twitter"
               href="https://twitter.com/JustinReedCheng"
-              role="button"
-            >
-              Twitter
-            </a>
+            ></a>
             <a
               target="_blank"
-              className="btn btn-secondary"
+              rel="noopener noreferrer"
+              className="fa fa-github"
               href="https://github.com/1Fungi99"
               role="button"
-            >
-              Github
-            </a>
+            ></a>
           </div>
         </div>
       </div>

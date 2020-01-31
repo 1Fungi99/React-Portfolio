@@ -20,6 +20,10 @@ code {
 .white-text {
   color: rgba(245, 245, 245, 0.753);
 }
+.shaded {
+  background-color: rgba(82, 78, 78, 0.479);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 20px 10px 0 rgba(0, 0, 0, 0.5);
+}
 .btn {
   margin-left: 1.5%;
 }
@@ -93,6 +97,12 @@ svg {
 #portfolio-buffer {
   margin-bottom: 2%;
 }
+.padding-buffer {
+  padding-bottom: 2%;
+}
+.buffer {
+  margin-bottom: 4%;
+}
 .home-btn {
   margin-left: 2px;
   margin-right: 2px;
@@ -159,7 +169,36 @@ img {
   height: 198px;
   width: 298px;
 }
-
+/* CONTACT.JS CSS FOR SOCIAL BUTTONS */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-github {
+  background: rgb(31, 30, 30);
+  color: white;
+}
 @media only screen and (max-width: 425px) {
   h1 {
     font-size: x-large;

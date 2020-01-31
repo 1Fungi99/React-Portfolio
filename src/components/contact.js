@@ -35,6 +35,16 @@ function Contact() {
               href="https://github.com/1Fungi99"
               role="button"
             ></a>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1kGwOnV0D9BO1B-9oFF0KnPNZ0wedjzf2/view?usp=sharing"
+              download
+            >
+              <img
+                src="https://img.icons8.com/ultraviolet/40/000000/open-resume.png"
+                className="fa fa-resume"
+              ></img>
+            </a>
           </div>
         </div>
       </div>

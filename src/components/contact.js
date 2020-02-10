@@ -9,28 +9,33 @@ function Contact() {
           <div className="h-divider"></div>
           <h4>Email: ijustin17@gmail.com</h4>
           <h4>Phone: (213) 864-5887</h4>
+          {/* Social Media Buttons */}
           <div className="row contact">
             <a
               target="_blank"
               rel="noopener noreferrer"
+              // Classes based on Online Documentation along with icons
               className="fa fa-linkedin"
               href="https://www.linkedin.com/in/justin-reed-cheng-37b425194/"
             ></a>
             <a
               target="_blank"
               rel="noopener noreferrer"
+              // Classes based on Online Documentation along with icons
               className="fa fa-facebook"
               href="https://www.facebook.com/justinpc2"
             ></a>
             <a
               target="_blank"
               rel="noopener noreferrer"
+              // Classes based on Online Documentation along with icons
               className="fa fa-twitter"
               href="https://twitter.com/JustinReedCheng"
             ></a>
             <a
               target="_blank"
               rel="noopener noreferrer"
+              // Classes based on Online Documentation along with icons
               className="fa fa-github"
               href="https://github.com/1Fungi99"
               role="button"
@@ -41,6 +46,5 @@ function Contact() {
     </div>
   );
 }
-// function Twitter(){window.open("https://twitter.com/JustinReedCheng");
 
 export default Contact;

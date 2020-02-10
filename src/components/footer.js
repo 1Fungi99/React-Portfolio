@@ -1,4 +1,6 @@
 import React from "react";
+
+// importing github button. Both an NPM package and a HTML Dependancy
 import GitHubButton from "react-github-btn";
 
 function HomeFooter() {

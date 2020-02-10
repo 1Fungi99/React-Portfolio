@@ -2,12 +2,12 @@ import React from "react";
 
 const CardContent = props => {
   return (
-    <div class="text-center">
+    <div className="text-center">
       <div>
         <svg
-          class="bd-placeholder-img rounded-circle"
+          className="bd-placeholder-img rounded-circle"
           xmlns="http://www.w3.org/2000/svg"
-          preserveaspectratio="xMidYMid slice"
+          preserveAspectRatio="xMidYMid slice"
           focusable="false"
           role="img"
           aria-label="Placeholder: 140x140"
@@ -24,7 +24,7 @@ const CardContent = props => {
       <h2>{props.name}</h2>
       <p>{props.text}</p>
       <p>
-        <a class="btn btn-secondary" href={props.href} role="button">
+        <a className="btn btn-secondary" href={props.href} role="button">
           View details
         </a>
       </p>

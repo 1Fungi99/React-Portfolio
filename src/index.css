@@ -44,11 +44,6 @@ code {
 
 svg {
   margin-top: 15px;
-  background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia02.hongkiat.com%2Ffacebook-likes-with-node-js%2Fnode-js.jpg&f=1&nofb=1");
-}
-
-.container-fluid {
-  width: 1 rem;
 }
 
 .motto {
@@ -97,11 +92,18 @@ svg {
 #portfolio-buffer {
   margin-bottom: 2%;
 }
-.padding-buffer {
+.bottom-buffer {
   padding-bottom: 2%;
+}
+.top-buffer {
+  padding-top: 2%;
 }
 .buffer {
   margin-bottom: 4%;
+}
+.side-buffer {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .home-btn {
   margin-left: 2px;
@@ -169,6 +171,9 @@ img {
   height: 198px;
   width: 298px;
 }
+.profile-picture {
+  height: unset;
+}
 /* CONTACT.JS CSS FOR SOCIAL BUTTONS */
 .fa {
   padding: 15px;
@@ -198,6 +203,9 @@ img {
 .fa-github {
   background: rgb(31, 30, 30);
   color: white;
+}
+.fa-resume {
+  background: black;
 }
 @media only screen and (max-width: 425px) {
   h1 {
